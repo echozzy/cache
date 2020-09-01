@@ -16,7 +16,7 @@
     "require": {
         "ext-swoole": "^4.4.0",
         "psr/simple-cache": "^1.0",
-        "easyswoole/component": "^1.9",
+        "easyswoole/component": "^2.0",
         "opis/closure": "^3.4"
     },
     "autoload": {
