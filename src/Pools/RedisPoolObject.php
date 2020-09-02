@@ -12,14 +12,14 @@
 
 namespace EasySwoole\Cache\Pools;
 
-use EasySwoole\Component\Pool\PoolObjectInterface;
+use EasySwoole\Pool\ObjectInterface;
 use Swoole\Coroutine\Redis;
 
 /**
  * 协程Redis客户端
  * Class RedisPoolObject.
  */
-class RedisPoolObject extends Redis implements PoolObjectInterface
+class RedisPoolObject extends Redis implements ObjectInterface
 {
     public function gc()
     {

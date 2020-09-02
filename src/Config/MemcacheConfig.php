@@ -12,12 +12,12 @@
 
 namespace EasySwoole\Cache\Config;
 
-use EasySwoole\Component\Pool\PoolConf;
+use EasySwoole\Pool\Config;
 
 /**
  * Class MemcacheConfig.
  */
-class MemcacheConfig extends PoolConf
+class MemcacheConfig extends Config
 {
     protected $host = '127.0.0.1';
     protected $port = 11211;

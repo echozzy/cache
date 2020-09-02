@@ -15,7 +15,7 @@ namespace EasySwoole\Cache\Drivers;
 use EasySwoole\Cache\Config\RedisConfig;
 use EasySwoole\Cache\Pools\RedisPool;
 use EasySwoole\Cache\Pools\RedisPoolObject;
-use EasySwoole\Component\Pool\Exception\PoolObjectNumError;
+use EasySwoole\Pool\Exception\PoolEmpty;
 use Swoole\Coroutine;
 use Throwable;
 
@@ -58,7 +58,7 @@ class Redis extends AbstractDriver
 
     /**
      * 获取连接.
-     * @throws PoolObjectNumError
+     * @throws PoolEmpty
      * @throws Throwable
      * @return RedisPoolObject
      */
@@ -86,7 +86,7 @@ class Redis extends AbstractDriver
      * @param  string             $key
      * @param  mixed              $value
      * @param  null               $expire
-     * @throws PoolObjectNumError
+     * @throws PoolEmpty
      * @throws Throwable
      * @return mixed
      */
@@ -104,7 +104,7 @@ class Redis extends AbstractDriver
      * 读取缓存.
      * @param  string             $key
      * @param  null               $default
-     * @throws PoolObjectNumError
+     * @throws PoolEmpty
      * @throws Throwable
      * @return bool|mixed
      */
@@ -120,7 +120,7 @@ class Redis extends AbstractDriver
      * 自增缓存（针对数值缓存）.
      * @param $key
      * @param  int                   $step
-     * @throws PoolObjectNumError
+     * @throws PoolEmpty
      * @throws Throwable
      * @return bool|int|mixed|string
      */
@@ -135,7 +135,7 @@ class Redis extends AbstractDriver
      * 自减缓存（针对数值缓存）.
      * @param $key
      * @param  int                   $step
-     * @throws PoolObjectNumError
+     * @throws PoolEmpty
      * @throws Throwable
      * @return bool|int|mixed|string
      */
@@ -149,7 +149,7 @@ class Redis extends AbstractDriver
     /**
      * 判断缓存是否存在.
      * @param  string             $key
-     * @throws PoolObjectNumError
+     * @throws PoolEmpty
      * @throws Throwable
      * @return mixed
      */
@@ -163,7 +163,7 @@ class Redis extends AbstractDriver
     /**
      * 删除缓存.
      * @param  string             $key
-     * @throws PoolObjectNumError
+     * @throws PoolEmpty
      * @throws Throwable
      * @return mixed
      */
@@ -176,7 +176,7 @@ class Redis extends AbstractDriver
 
     /**
      * 清空缓存.
-     * @throws PoolObjectNumError
+     * @throws PoolEmpty
      * @throws Throwable
      * @return mixed
      */

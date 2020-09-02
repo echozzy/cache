@@ -13,7 +13,7 @@
 namespace EasySwoole\Cache\Pools;
 
 use EasySwoole\Cache\Config\MemcacheConfig;
-use EasySwoole\Component\Pool\AbstractPool;
+use EasySwoole\Pool\AbstractPool;
 
 /**
  * Memcache Pools

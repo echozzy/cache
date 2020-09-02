@@ -12,12 +12,12 @@
 
 namespace EasySwoole\Cache\Config;
 
-use EasySwoole\Component\Pool\PoolConf;
+use EasySwoole\Pool\Config;
 
 /**
  * Class RedisConfig.
  */
-class RedisConfig extends PoolConf
+class RedisConfig extends Config
 {
     protected $db                = 0;
     protected $host              = '127.0.0.1';

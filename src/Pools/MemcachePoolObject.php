@@ -13,13 +13,13 @@
 namespace EasySwoole\Cache\Pools;
 
 use EasySwoole\Cache\Memcache\MemcacheClient;
-use EasySwoole\Component\Pool\PoolObjectInterface;
+use EasySwoole\Pool\ObjectInterface;
 
 /**
  * Memcache Pool Client
  * Class MemcachePoolObject.
  */
-class MemcachePoolObject extends MemcacheClient implements PoolObjectInterface
+class MemcachePoolObject extends MemcacheClient implements ObjectInterface
 {
     public function gc()
     {

@@ -13,7 +13,7 @@
 namespace EasySwoole\Cache\Pools;
 
 use EasySwoole\Cache\Config\RedisConfig;
-use EasySwoole\Component\Pool\AbstractPool;
+use EasySwoole\Pool\AbstractPool;
 
 /**
  * Redis Pools
